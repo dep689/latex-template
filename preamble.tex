@@ -1,0 +1,31 @@
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{subfiles}
+
+% theorem environments
+
+% all of these follow the same counter, which is relative to each chapter:
+\theoremstyle{definition}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{proposition}[theorem]{命題}
+\newtheorem{lemma}[theorem]{補題}
+\newtheorem{corollary}[theorem]{系}
+\newtheorem{example}[theorem]{例}
+\newtheorem{definition}[theorem]{定義}
+
+% case env:
+\newtheorem{case}{Case}[theorem]
+
+% numberless env's:
+\newtheorem*{theorem*}{定理}
+\newtheorem*{proposition*}{命題}
+\newtheorem*{lemma*}{補題}
+\newtheorem*{corollary*}{系}
+\newtheorem*{example*}{例}
+
+% BLACKBOARD BOLD
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
